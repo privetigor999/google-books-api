@@ -1,0 +1,47 @@
+.inputBlock {
+  position: relative;
+
+  width: inherit;
+
+  &__input {
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+
+    width: inherit;
+    height: 40px;
+    padding: 0 44px 0 10px;
+
+    outline: none;
+    border: none;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: #c2c2c2;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+
+    border: none;
+    background-color: transparent;
+  }
+  &__img {
+    width: inherit;
+    height: inherit;
+
+    transition: transform 0.15s ease-in-out;
+
+    &:hover {
+      transform: scale(110%);
+    }
+  }
+}

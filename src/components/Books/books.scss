@@ -1,0 +1,79 @@
+.books {
+  width: 100%;
+  height: 280px;
+  margin: 5px -5px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+
+  background-color: #e1dede;
+  border-radius: 6px;
+  transition: transform 0.15s ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    width: percentage(1 / 2);
+  }
+
+  @media screen and (min-width: 1400px) {
+    width: percentage(1 / 3);
+  }
+
+  &:hover {
+    transform: scale(101%);
+  }
+
+  &__img {
+    flex-shrink: 0;
+
+    width: 100px;
+    height: 170px;
+    margin-bottom: 8px;
+
+    object-fit: cover;
+  }
+
+  &__category {
+    font-size: 12px;
+
+    margin-bottom: 4px;
+
+    color: #c2c2c2;
+    text-decoration: underline;
+    text-transform: lowercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__title {
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__authors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__author {
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

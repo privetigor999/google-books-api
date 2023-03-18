@@ -1,0 +1,23 @@
+.selectBlock {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+  &__select {
+    width: 120px;
+
+    border: none;
+    border-radius: 4px;
+
+    color: rgb(98, 93, 93);
+  }
+
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+}

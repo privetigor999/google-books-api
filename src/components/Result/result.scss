@@ -1,0 +1,47 @@
+.result {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: inherit;
+  min-height: calc(100vh - 200px);
+  padding: 20px;
+
+  background-color: #c1c1c13c;
+
+  &__title {
+    font-size: 12px;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    width: 200px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__bad {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 0 5px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0px;
+    }
+  }
+}
