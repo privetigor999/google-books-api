@@ -44,4 +44,18 @@
       transform: scale(110%);
     }
   }
+
+  &__error {
+    font-size: 12px;
+
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+    color: rgb(233, 42, 42);
+  }
 }
